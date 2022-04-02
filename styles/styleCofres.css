@@ -1,0 +1,2172 @@
+
+/* COFRES PANTALLA INDIVIDUAL */
+
+
+/* cofre rojo */
+
+
+.cofreRojo{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../src/cofre rojo/backgroundCofreRojo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 5;
+    display: none;
+    filter: contrast(108%) brightness(115%) ;
+}
+
+.contenedor__cofreRojo{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.flecha__back-rojo{
+    width: 11rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha__back-rojo img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(109%) brightness(115%) ;
+
+}
+
+
+/* button buy cofre */
+.buttonBuy-cofreRojo button{
+    width: 17rem;
+    height: 8rem;
+    cursor: pointer;
+    font-size: 3.5rem;
+    color: white;
+    background-color: rgb(13, 13, 14);
+    border-color: rgba(255, 0, 0, 0.356);
+    letter-spacing: 1px;
+    font-weight: bold;
+    bottom: 7rem;
+    left: 55%;
+    border-radius: 15px;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    filter: contrast(106%) brightness(125%) drop-shadow(0 0 20px rgb(226, 54, 54));
+    background-image: url("../src/cofre rojo/Buy It.png");
+    background-size: contain;
+
+}
+
+.buttonBuy-cofreRojo button:active{
+    width: 16.5rem;
+    height: 7.8rem;
+    border-color: rgb(170, 39, 39);
+} 
+
+
+        /* container izquierda */
+
+.container1__cofreRojo{
+    width: 35%;
+    height: 100vh;
+    position: relative;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+        /* container derecha */
+
+.container2__cofreRojo{
+    width: 58%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+  
+.class-cofreRojo {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px rgb(0, 2, 0));
+}
+
+.saberMas-rojo{
+    width: 5rem;
+    height: 5rem;
+    cursor:pointer;
+    border-radius: 100%;
+    position: absolute;
+    top: -6%;
+    right: 5%;
+    background-color: rgb(252, 174, 174);
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.993));
+    user-select: none;
+}
+
+.saberMas-rojo p{
+    font-size: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.saberMas-rojo:active{
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 2.7rem;
+}
+
+.info-rojo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    border-radius: 15px;
+    border: 4px solid black;
+    filter: drop-shadow(0px 0px 10px rgb(255, 2, 2));
+    background-color: rgb(0, 0, 0);
+    z-index: 20;
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.info-rojo span{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-weight: bold;
+    font-size: 6rem;
+    color: rgb(255, 47, 47);
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(0 0 3px rgb(128, 0, 0));
+    transition: all .6s ease-in-out;
+}
+
+.info-rojo span:active{
+    right: 2%;
+    top: 2%;
+    font-size: 5.6rem;
+}
+
+
+.class-cofreRojo img{
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character2-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character3-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+
+
+.character1-rojo{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 0, 0, 0.233));
+}
+
+.character1-rojo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character2-rojo{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 0, 0, 0.233));
+
+}
+
+.character2-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character3-rojo{
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 0, 0, 0.233));
+
+}
+
+.character3-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.characterStats-cofreRojo {
+    position: relative;
+    width: 70%;
+}
+
+.characterStats-cofreRojo img{
+    width: 100%;
+    height: 95%;
+
+}
+
+
+/* character 1 stars */
+
+.character1-grande-rojo-3stars{
+    position: absolute;
+    top: 5.3%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 3;
+}
+
+.character1-grande-rojo-2stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+}
+
+.character1-grande-rojo-1stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+
+}
+
+
+/* character 2 stars */
+
+
+.character2-grande-rojo-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-rojo-2stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-rojo-1stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+/* character 3 stars */
+
+.character3-grande-rojo-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.6%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-rojo-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-rojo-1stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.character1-grande-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character2-grande-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character3-grande-rojo img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.stars-cofreRojo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.stars-cofreRojo img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.star1-rojo{
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star1-rojo img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star1-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+.star1-rojo:active{
+    width: 7.5%;
+}
+
+
+.star2-rojo{
+    width: 11%;
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star2-rojo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.star2-rojo:active{
+    width: 10.5%;
+}
+
+
+.star2-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.star3-rojo{
+    width: 15%;
+    position: absolute;
+    right: 23%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star3-rojo img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star3-rojo:hover{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+.star3-rojo:active{
+    width: 14.5%;
+}
+
+/* efect elementos */
+
+
+
+
+.character1-rojo {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+.character2-rojo {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+.character3-rojo {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+
+
+.star1-rojo{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+
+.star2-rojo{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+
+
+.star3-rojo{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein;
+}
+
+  
+@keyframes slidein {
+  
+    20% {
+        filter: drop-shadow(1px 1px 10px rgb(226, 69, 69));
+
+    }
+
+    40% {
+        filter: none;
+    }
+  
+    60% {
+        filter: drop-shadow(1px 1px 10px rgb(226, 69, 69));
+    }
+    80% {
+        filter: none;
+    }
+
+    90% {
+        filter: drop-shadow(1px 1px 10px rgb(226, 69, 69));
+        
+    }
+
+}
+
+
+
+/* cofre gris */
+
+
+
+.cofreGris{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../src/cofre gris/backgroundCofreGris.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 5;
+    display: none;
+    filter: contrast(108%) brightness(130%) ;
+}
+
+.contenedor__cofreGris{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.flecha__back-gris{
+    width: 11rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha__back-gris img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(109%) brightness(115%) ;
+
+}
+
+
+/* button buy cofre */
+.buttonBuy-cofreGris button{
+    width: 17rem;
+    height: 8rem;
+    cursor: pointer;
+    font-size: 3.5rem;
+    color: white;
+    background-color: rgb(13, 13, 14);
+    border-color: rgb(240, 240, 240);
+    letter-spacing: 1px;
+    font-weight: bold;
+    bottom: 7rem;
+    left: 55%;
+    border-radius: 15px;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    filter: contrast(118%) brightness(145%) drop-shadow(0 0 20px rgb(240, 240, 240));
+    background-image: url("../src/cofre gris/Buy It.png");
+    background-size: contain;
+
+}
+
+.buttonBuy-cofreGris button:active{
+    width: 16.5rem;
+    height: 7.8rem;
+    border-color: rgb(240, 240, 240);
+} 
+
+
+        /* container izquierda */
+
+.container1__cofreGris{
+    width: 35%;
+    height: 100vh;
+    position: relative;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+        /* container derecha */
+
+.container2__cofreGris{
+    width: 58%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+  
+.class-cofreGris{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px rgb(0, 2, 0));
+
+}
+
+.saberMas-gris{
+    width: 5rem;
+    height: 5rem;
+    cursor:pointer;
+    border-radius: 100%;
+    position: absolute;
+    top: -6%;
+    right: 5%;
+    background-color: rgb(219, 219, 219);
+    filter: drop-shadow(0 0 8px rgb(240, 240, 240));
+    user-select: none;
+}
+
+.saberMas-gris p{
+    font-size: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.saberMas-gris:active{
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 2.7rem;
+}
+
+.info-gris{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    border-radius: 15px;
+    border: 4px solid black;
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    background-color: rgb(0, 0, 0);
+    z-index: 20;
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.info-gris span{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-weight: bold;
+    font-size: 6rem;
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.233));
+    transition: all .6s ease-in-out;
+}
+
+.info-gris span:active{
+    right: 2%;
+    top: 2%;
+    font-size: 5.6rem;
+}
+
+
+.class-cofreGris img{
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character2-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character3-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+
+
+.character1-gris{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.character1-gris img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character2-gris{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px #ffffff3b);
+
+}
+
+.character2-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character3-gris{
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+
+}
+
+.character3-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.characterStats-cofreGris {
+    position: relative;
+    width: 70%;
+}
+
+.characterStats-cofreGris img{
+    width: 100%;
+    height: 95%;
+
+}
+
+
+/* character 1 stars */
+
+.character1-grande-gris-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 3;
+}
+
+.character1-grande-gris-2stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+}
+
+.character1-grande-gris-1stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+
+}
+
+
+/* character 2 stars */
+
+
+.character2-grande-gris-3stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.6%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-gris-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.6%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-gris-1stars{
+    position: absolute;
+    top: 5.5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+/* character 3 stars */
+
+.character3-grande-gris-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-gris-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-gris-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+
+
+.character1-grande-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character2-grande-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character3-grande-gris img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.stars-cofreGris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.stars-cofreGrisimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.star1-gris{
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star1-gris img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star1-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+.star1-gris:active{
+    width: 7.5%;
+}
+
+
+.star2-gris{
+    width: 11%;
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgb(240, 240, 240));
+}
+
+.star2-gris img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.star2-gris:active{
+    width: 10.5%;
+}
+
+
+.star2-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.star3-gris{
+    width: 15%;
+    position: absolute;
+    right: 23%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star3-gris img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star3-gris:hover{
+    filter: drop-shadow(0px 0px 10px rgb(240, 240, 240));
+    transition: all 0.25s ease-in-out;
+}
+
+.star3-gris:active{
+    width: 14.5%;
+}
+
+/* efect elementos */
+
+
+
+
+.character1-gris {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+.character2-gris {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+.character3-gris {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+
+
+.star1-gris{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+
+.star2-gris{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+
+
+.star3-gris{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-gris;
+}
+
+  
+@keyframes slidein-gris {
+  
+    20% {
+        filter: drop-shadow(1px 1px 10px rgb(240, 240, 240));
+
+    }
+
+    40% {
+        filter: none;
+    }
+  
+    60% {
+        filter: drop-shadow(1px 1px 10px rgb(240, 240, 240));
+    }
+    80% {
+        filter: none;
+    }
+
+    90% {
+        filter: drop-shadow(1px 1px 10px rgb(240, 240, 240));
+        
+    }
+
+}
+
+
+
+/* cofre verde */
+
+
+.cofreVerde{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../src/cofre verde/backgroundCofreVerde.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 5;
+    display: none;
+    filter: contrast(110%) brightness(110%) ;
+}
+
+.contenedor__cofreVerde{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.flecha__back-verde{
+    width: 11rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha__back-verde img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(109%) brightness(115%) ;
+
+}
+
+
+/* button buy cofre */
+.buttonBuy-cofreVerde button{
+    width: 17rem;
+    height: 8rem;
+    cursor: pointer;
+    font-size: 3.5rem;
+    color: white;
+    background-color: rgb(13, 13, 14);
+    border-color: rgba(21, 255, 0, 0.356);
+    letter-spacing: 1px;
+    font-weight: bold;
+    bottom: 7rem;
+    left: 55%;
+    border-radius: 15px;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    filter: contrast(118%) brightness(145%) drop-shadow(0 0 20px rgb(74, 226, 54));
+    background-image: url("../src/cofre verde/Buy It.png");
+    background-size: contain;
+}
+
+.buttonBuy-cofreVerde button:active{
+    width: 16.5rem;
+    height: 7.8rem;
+    border-color: rgb(43, 170, 39);
+} 
+
+
+        /* container izquierda */
+
+.container1__cofreVerde{
+    width: 35%;
+    height: 100vh;
+    position: relative;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+        /* container derecha */
+
+.container2__cofreVerde{
+    width: 58%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+  
+.class-cofreVerde {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px rgb(0, 2, 0));
+}
+
+.saberMas-verde{
+    width: 5rem;
+    height: 5rem;
+    cursor:pointer;
+    border-radius: 100%;
+    position: absolute;
+    top: -6%;
+    right: 5%;
+    background-color: rgb(174, 252, 178);
+    filter: drop-shadow(0 0 8px rgb(30, 255, 0));
+    user-select: none;
+}
+
+.saberMas-verde p{
+    font-size: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.saberMas-verde:active{
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 2.7rem;
+}
+
+.info-verde{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    border-radius: 15px;
+    border: 4px solid black;
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    background-color: rgb(0, 0, 0);
+    z-index: 20;
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.info-verde span{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-weight: bold;
+    font-size: 6rem;
+    color: rgb(106, 255, 47);
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(0 0 3px rgba(9, 255, 0, 0.233));
+    transition: all .6s ease-in-out;
+}
+
+.info-verde span:active{
+    right: 2%;
+    top: 2%;
+    font-size: 5.6rem;
+}
+
+
+.class-cofreVerde img{
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+
+}
+
+.character1-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+.character2-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+.character3-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.character1-verde{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(9, 255, 0, 0.233));
+}
+
+.character1-verde img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+
+}
+
+.character1-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character2-verde{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(9, 255, 0, 0.233));
+
+}
+
+.character2-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character3-verde{
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(9, 255, 0, 0.233));
+
+}
+
+.character3-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.characterStats-cofreVerde {
+    position: relative;
+    width: 70%;
+}
+
+.characterStats-cofreVerde img{
+    width: 100%;
+    height: 95%;
+    transition: all .5s ease-in-out;
+
+}
+
+
+/* character 1 stars */
+
+.character1-grande-verde-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 3;
+}
+
+.character1-grande-verde-2stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+}
+
+.character1-grande-verde-1stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+
+}
+
+
+/* character 2 stars */
+
+
+.character2-grande-verde-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-verde-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.4%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-verde-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+/* character 3 stars */
+
+.character3-grande-verde-3stars{
+    position: absolute;
+    top: 4.6%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-verde-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-verde-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+
+.character1-grande-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+.character2-grande-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+.character3-grande-verde img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+
+.stars-cofreVerde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.stars-cofreVerde img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.star1-verde{
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star1-verde img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+
+}
+
+.star1-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+.star1-verde:active{
+    width: 7.5%;
+}
+
+
+.star2-verde{
+    width: 11%;
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star2-verde img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(115%) brightness(105%) ;
+    transition: all .5s ease-in-out;
+
+}
+
+.star2-verde:active{
+    width: 10.5%;
+}
+
+
+.star2-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.star3-verde{
+    width: 15%;
+    position: absolute;
+    right: 23%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star3-verde img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+
+}
+
+.star3-verde:hover{
+    filter: drop-shadow(0px 0px 10px rgb(30, 255, 0));
+    transition: all 0.25s ease-in-out;
+}
+
+.star3-verde:active{
+    width: 14.5%;
+}
+
+/* efect elementos */
+
+
+
+
+.character1-verde {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+.character2-verde {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+.character3-verde {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+
+
+.star1-verde{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+
+.star2-verde{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+
+
+.star3-verde{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-verde;
+}
+
+  
+@keyframes slidein-verde {
+  
+    20% {
+        filter: drop-shadow(1px 1px 10px rgb(30, 255, 0));
+
+    }
+
+    40% {
+        filter: none;
+    }
+  
+    60% {
+        filter: drop-shadow(1px 1px 10px rgb(30, 255, 0));
+    }
+    80% {
+        filter: none;
+    }
+
+    90% {
+        filter: drop-shadow(1px 1px 10px rgb(30, 255, 0));
+        
+    }
+
+}
+
+
+
+
+/* cofre DIAMANTE */
+
+
+.cofreDiamante{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../src/cofre diamante/backgroundCofreDiamante.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 5;
+    display: none;
+    filter: contrast(110%) brightness(115%) ;
+}
+
+.contenedor__cofreDiamante{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.flecha__back-diamante{
+    width: 11rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha__back-diamante img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(109%) brightness(115%) ;
+
+}
+
+
+/* button buy cofre */
+.buttonBuy-cofreDiamante button{
+    width: 17rem;
+    height: 8rem;
+    cursor: pointer;
+    font-size: 3.5rem;
+    color: white;
+    background-color: rgb(13, 13, 14);
+    border-color: rgba(0, 204, 255, 0.356);
+    letter-spacing: 1px;
+    font-weight: bold;
+    bottom: 7rem;
+    left: 55%;
+    border-radius: 15px;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    filter: contrast(106%) brightness(125%) drop-shadow(0 0 20px rgb(53, 216, 189));
+    background-image: url("../src/cofre diamante/Buy It.png");
+    background-size: contain;
+
+}
+
+.buttonBuy-cofreDiamante button:active{
+    width: 16.5rem;
+    height: 7.8rem;
+    border-color: rgb(39, 170, 153);
+} 
+
+
+        /* container izquierda */
+
+.container1__cofreDiamante{
+    width: 35%;
+    height: 100vh;
+    position: relative;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+        /* container derecha */
+
+.container2__cofreDiamante{
+    width: 58%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+  
+.class-cofreDiamante {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px rgb(0, 2, 0));
+}
+
+.saberMas-diamante{
+    width: 5rem;
+    height: 5rem;
+    cursor:pointer;
+    border-radius: 100%;
+    position: absolute;
+    top: -6%;
+    right: 5%;
+    background-color: rgb(174, 252, 239);
+    filter: drop-shadow(0 0 8px rgba(0, 255, 242, 0.993));
+    user-select: none;
+}
+
+.saberMas-diamante p{
+    font-size: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.saberMas-diamante:active{
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 2.7rem;
+}
+
+.info-diamante{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    border-radius: 15px;
+    border: 4px solid black;
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    background-color: rgb(0, 0, 0);
+    z-index: 20;
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.info-diamante span{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-weight: bold;
+    font-size: 6rem;
+    color: rgba(0, 255, 242, 0.993);
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(0 0 3px rgb(0, 128, 107));
+    transition: all .6s ease-in-out;
+}
+
+.info-diamante span:active{
+    right: 2%;
+    top: 2%;
+    font-size: 5.6rem;
+}
+
+
+.class-cofreDiamante img{
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character2-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+.character3-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+
+}
+
+
+.character1-diamante{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(0, 255, 242, 0.233));
+}
+
+.character1-diamante img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character2-diamante{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.233));
+
+}
+
+.character2-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.character3-diamante{
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(0, 225, 255, 0.233));
+
+}
+
+.character3-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.characterStats-cofreDiamante{
+    position: relative;
+    width: 70%;
+}
+
+.characterStats-cofreDiamante img{
+    width: 100%;
+    height: 95%;
+
+}
+
+/* character 1 stars */
+
+.character1-grande-diamante-3stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 3;
+}
+
+.character1-grande-diamante-2stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+}
+
+.character1-grande-diamante-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.6%;
+    transform: translate(-50%);
+    width: 90%;
+    opacity: 0;
+
+}
+
+
+/* character 2 stars */
+
+
+.character2-grande-diamante-3stars{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-diamante-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.4%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.character2-grande-diamante-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+}
+
+/* character 3 stars */
+
+.character3-grande-diamante-3stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-diamante-2stars{
+    position: absolute;
+    top: 5.1%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.character3-grande-diamante-1stars{
+    position: absolute;
+    top: 5.2%;
+    left: 50.5%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+
+.character1-grande-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character2-grande-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+.character3-grande-diamante img{
+    width: 100%;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.stars-cofreDiamante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.stars-cofreDiamante img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.star1-diamante{
+    width: 8%;
+    position: absolute;
+    left: 31%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star1-diamante img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star1-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+.star1-diamante:active{
+    width: 7.5%;
+}
+
+
+.star2-diamante{
+    width: 11%;
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star2-diamante img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(115%) brightness(105%) ;
+}
+
+.star2-diamante:active{
+    width: 10.5%;
+}
+
+
+.star2-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+
+.star3-diamante{
+    width: 15%;
+    position: absolute;
+    right: 23%;
+    transform: translate(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.233));
+}
+
+.star3-diamante img{
+    width: 100%;
+    height: 100%;
+    filter: contrast(115%) brightness(105%) ;
+    object-fit: cover;
+}
+
+.star3-diamante:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 242, 0.993));
+    transition: all 0.25s ease-in-out;
+}
+
+.star3-diamante:active{
+    width: 14.5%;
+}
+
+/* efect elementos */
+
+
+
+
+.character1-diamante {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+.character2-diamante {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+.character3-diamante {
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+
+
+.star1-diamante{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+
+.star2-diamante{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+
+
+.star3-diamante{
+    animation-iteration-count: infinite;
+    animation-duration:7000ms;
+    animation-name: slidein-diamante;
+}
+
+  
+@keyframes slidein-diamante {
+  
+    20% {
+        filter: drop-shadow(1px 1px 10px rgb(69, 226, 218));
+
+    }
+
+    40% {
+        filter: none;
+    }
+  
+    60% {
+        filter: drop-shadow(1px 1px 10px rgb(69, 226, 218));
+    }
+    80% {
+        filter: none;
+    }
+
+    90% {
+        filter: drop-shadow(1px 1px 10px rgb(69, 226, 218));
+        
+    }
+
+}
